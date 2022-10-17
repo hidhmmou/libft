@@ -1,5 +1,5 @@
 <h1 align="center">
-	42cursus' libft
+	Killua 42cursus' libft
 </h1>
 
 <p align="center">
