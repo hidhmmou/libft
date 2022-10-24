@@ -34,7 +34,7 @@ int	ft_isnum(const char c)
 int	ft_atoi(const char *str)
 {
 	int		i;
-	long	s;
+	unsigned long long	s;
 	int		sign;
 
 	i = 0;
@@ -52,9 +52,9 @@ int	ft_atoi(const char *str)
 	{
 		s = s * 10 + (str[i] - '0');
 		i++;
-		if (s * sign < -2147483648)
+		if (s * sign < LLONG_MAX)
 			return (0);
-		if (s * sign > 2147483647)
+		if (s * sign > LLONG_MIN)
 			return (-1);
 	}
 	return (sign * s);
